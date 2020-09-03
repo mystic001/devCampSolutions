@@ -20,11 +20,11 @@ function letterChanger(normalString){
     'k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 
-//This vowel checker is to check if an slphsbet is vowel
+//This vowel checker is to check if an alphabet is vowel
     const vowelChecker = (alpha)=>{
         let lowerCase = alpha.toLowerCase(); //this converts the alpha to lowercase
 
-        /*this is for looping throw the array of vowels and checking it against alpha to 
+        /*this is for looping throug the array of vowels and checking it against alpha to 
         confirm is alpha is vowel*/
         for( let i = 0 ; i < vowels.length ; i++){
             if(lowerCase == vowels[i]){
@@ -46,7 +46,7 @@ function letterChanger(normalString){
             continue; // When this is done we use continue keyword to skip to the next alphabet in the argument
         } else { //This means the vowel checker returns false and this line of code will be executed
             
-            let valueTochange = normalString[i] //It takes the value we wish to change and store it in a variable 
+            let valueTochange = normalString[i] //It takes the value we wish to change and stores it in a variable 
             let position = alphabets.indexOf(valueTochange); //This allows us get the position of value we want to change in our array of alphabet
             let newletter = alphabets[position + 1]; //And also get the new alphabet we want to use in replacing the consonant by adding 1
 
